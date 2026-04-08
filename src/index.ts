@@ -60,7 +60,7 @@ function parseLockFile(
 async function main(): Promise<void> {
   const dir = resolve(".");
 
-  console.log(bold("\ndep-lock\n"));
+  console.log(bold("\ndep-locker\n"));
 
   // Step 1: Detection
   const detection = detectManagers(dir);
