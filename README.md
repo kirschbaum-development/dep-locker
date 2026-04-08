@@ -2,7 +2,16 @@
 
 Pin dependency versions to their lock file resolutions for supply-chain security.
 
-Supply-chain attacks on npm and Composer packages are increasingly common — malware gets injected as new versions of popular libraries. Pinning exact versions prevents automatic adoption of compromised releases.
+## Why This Exists
+
+Software supply-chain attacks are no longer rare — they happen almost weekly. Attackers compromise maintainer accounts or take over abandoned packages, then push new versions containing malware. Because most projects use range constraints like `^1.2.0` or `~1.2.0`, a simple `npm install` or `composer update` can silently pull in a compromised release.
+
+The two most effective defenses are straightforward:
+
+1. **Pin exact versions** — so your project only installs the versions you've vetted, not whatever is newest
+2. **Disable post-install scripts** — since `postinstall` is the primary vector attackers use to execute malicious code
+
+This tool automates both. It reads your lock file to find the versions you're actually running, pins your manifest to those exact versions, and configures `.npmrc` to enforce these practices going forward.
 
 ## Usage
 
