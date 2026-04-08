@@ -1,5 +1,5 @@
 {
-  "name": "dependency-pinner",
+  "name": "@kirschbaum-development/dependency-pinner",
   "version": "0.1.0",
   "description": "Pin dependency versions to lock file resolutions for supply-chain security",
   "type": "module",

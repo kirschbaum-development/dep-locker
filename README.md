@@ -18,7 +18,7 @@ This tool automates both. It reads your lock file to find the versions you're ac
 Run in your project root:
 
 ```bash
-npx dependency-pinner
+npx @kirschbaum-development/dependency-pinner
 ```
 
 The tool will:
