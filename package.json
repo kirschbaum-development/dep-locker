@@ -26,6 +26,10 @@
     "bun",
     "composer"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kirschbaum-development/dep-locker"
+  },
   "license": "MIT",
   "publishConfig": {
     "access": "public"
